@@ -36,6 +36,7 @@
             this.txtKetQua = new System.Windows.Forms.TextBox();
             this.btCong = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
+            this.BtTru = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -105,11 +106,22 @@
             this.label4.TabIndex = 7;
             this.label4.Text = "TÍNH TOÁN";
             // 
+            // BtTru
+            // 
+            this.BtTru.Location = new System.Drawing.Point(343, 257);
+            this.BtTru.Name = "BtTru";
+            this.BtTru.Size = new System.Drawing.Size(75, 23);
+            this.BtTru.TabIndex = 8;
+            this.BtTru.Text = "-";
+            this.BtTru.UseVisualStyleBackColor = true;
+            this.BtTru.Click += new System.EventHandler(this.BtTru_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(564, 323);
+            this.Controls.Add(this.BtTru);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.btCong);
             this.Controls.Add(this.txtKetQua);
@@ -135,6 +147,7 @@
         private System.Windows.Forms.TextBox txtKetQua;
         private System.Windows.Forms.Button btCong;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button BtTru;
     }
 }
 
